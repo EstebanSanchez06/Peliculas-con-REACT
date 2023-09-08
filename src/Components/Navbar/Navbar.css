@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdfffc;
+    width: 100%;
+}
+
+.nav-icon{
+    width: 150px;
+    height: 80px;
+    background-color: #fdfffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fdfffc;
+}
+.input-container{
+    display: flex;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    justify-self: center;
+}
+
+.navbar-input{
+    border: none;
+    border-bottom: solid 1px #0D1B2A;
+    height: 50px;
+    width: 300px;
+    outline: none;
+
+    align-self: center;
+    margin-right: 20px;
+
+}
+
+.nav-link{
+    justify-self: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.nav-link:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+:root{
+    --font-color: #fdfffc;
+    --background: #0D1B2A;
+    --dark-blue:  #1B263B;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #edf2f4;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #003566;
+    color: var(--font-color);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

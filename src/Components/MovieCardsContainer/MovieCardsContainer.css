@@ -1,0 +1,6 @@
+.cards-container{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin-left: 10px;
+}

@@ -1,0 +1,46 @@
+.card-container{
+    min-width: 210px;
+    max-width: 210px;
+    min-height: 300px;
+    max-height: 300px;
+
+}
+
+.card-container.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.movie__poster_container{
+  min-width: 210px;
+  max-width: 210px;
+  min-height: 300px;
+  max-height: 300px;
+  background-color: #1B263B;
+  margin-right: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-container.movie{
+  height: 500px;
+    border-radius: 10px;
+    background-image: url('https://i.etsystatic.com/10683147/r/il/acd5e8/1803979753/il_1080xN.1803979753_s80u.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
