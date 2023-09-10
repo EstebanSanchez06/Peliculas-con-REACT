@@ -15,7 +15,7 @@ const RatingMovies = () => {
         method: 'GET',
         headers: {
           accept: 'application/json',
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYjlhNmMxYmRkYjZkNGI1OTlmMTg0ODExNWUwZDM5YiIsInN1YiI6IjY0ODBjYzRmOTkyNTljMDBhY2NhYzExNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.yYgkMp79aIo7HUcwuBnWh1x2TR8o_OCS8D5Hob5mx5o'
+          Authorization: `Bearer ${import.meta.env.VITE_BEARER_KEY}`
         }
       };
     useEffect(()=>{

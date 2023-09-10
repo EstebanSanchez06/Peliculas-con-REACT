@@ -7,6 +7,7 @@ import { throwError } from '../../../throwError'
 import { useNavigate } from 'react-router-dom'
 
 
+
 const Home = () => {
     const [movies, setMovies]= useState([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17])
     const [topMovies, setTopMovies]= useState([18,19,20,21,22,23,24,25,26,27,28])
@@ -15,7 +16,7 @@ const Home = () => {
     useEffect(()=>{
         setLoading(true)
         setTimeout(()=>{
-          fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=1b9a6c1bddb6d4b599f1848115e0d39b')
+          fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${import.meta.env.VITE_API_KEY}`)
           .then(response => {
             if(response.ok){
               console.log('response ok')
@@ -34,7 +35,7 @@ const Home = () => {
               navigate("/error")
           }) 
   
-          fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1b9a6c1bddb6d4b599f1848115e0d39b')
+          fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.VITE_API_KEY}`)
           .then(response => {
             if(response.ok){
               console.log('top source ok')
